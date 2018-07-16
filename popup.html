@@ -1,0 +1,69 @@
+<!doctype html>
+
+<html>
+  <head>
+    <style type="text/css">
+      body {
+        margin: 10px;
+        white-space: nowrap;
+      }
+
+      h1 {
+        font-size: 15px;
+      }
+
+      #container {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+      }
+	  
+	  #dropdown {
+	    margin-left: 5px;
+	  }
+	  
+	  #dropdown2 {
+	    margin-left: 5px;
+	  }
+	  
+    </style>
+
+    <script src="popup.js"></script>
+
+  </head>
+
+  <body style="padding: 10px; padding-top: 0px">
+	  <h1 style="font-size: 20px;" id="header">
+    	PrivacySearch
+	</h1>
+	
+	<hr/>
+	
+    <div id="container">
+      <span>Chosen privacy level:</span>
+      <select style="width: 100px;" id="dropdown">
+        <option selected disabled hidden value=''></option>
+        <option value="L1">Low</option>
+        <option value="L2">Medium</option>
+        <option value="L3">High</option>
+      </select>
+    </div>
+	
+	<hr/>
+	
+    <div id="container">
+		<span style="vertical-align: middle">Chosen search engine:</span>
+      <select style="width: 100px; vertical-align: middle" id="dropdown2">
+        <option selected disabled hidden value=''></option>
+        <option value="Google"> Google</option>
+		<option value="Yahoo"> Yahoo</option>
+		<option value="Bing"> Bing</option>
+      </select>
+    </div>
+	
+	<hr/>
+	
+	<span>About <a href="about.html">PrivacySearch</a></span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>Read our <a href="privacyPolicy.html">Privacy Policy</a></span>
+	
+  </body>
+</html>
